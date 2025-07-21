@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OrangeHRM Login Test Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">OrangeHRM Login Test Report</h2>
+                <p class='attribute'><strong>Start Time: </strong>2025-07-21 08:04:55</p>
+                <p class='attribute'><strong>Duration: </strong>387 ms</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.OrangeHRMTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x5c756099d7da <unknown>
+#1 0x5c75604422e0 <unknown>
+#2 0x5c756047c7bd <unknown>
+#3 0x5c7560477ad7 <unknown>
+#4 0x5c75604c7e9e <unknown>
+#5 0x5c75604c7466 <unknown>
+#6 0x5c75604b9683 <unknown>
+#7 0x5c7560485b5b <unknown>
+#8 0x5c7560486f31 <unknown>
+#9 0x5c756096272b <unknown>
+#10 0x5c7560966534 <unknown>
+#11 0x5c7560949229 <unknown>
+#12 0x5c75609670d8 <unknown>
+#13 0x5c756092d61f <unknown>
+#14 0x5c756098add8 <unknown>
+#15 0x5c756098afb6 <unknown>
+#16 0x5c756099caf6 <unknown>
+#17 0x751c1cc9caa4 <unknown>
+#18 0x751c1cd29c3c <unknown>
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/home/rutuja/selenium-test/orangehrm_test.py", line 8, in setUp
+    self.driver = webdriver.Chrome()
+                  ^^^^^^^^^^^^^^^^^^
+  File "/home/rutuja/selenium-test/selenium-test/venv/lib/python3.12/site-packages/selenium/webdriver/chrome/webdriver.py", line 47, in __init__
+    super().__init__(
+  File "/home/rutuja/selenium-test/selenium-test/venv/lib/python3.12/site-packages/selenium/webdriver/chromium/webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/rutuja/selenium-test/selenium-test/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 261, in __init__
+    self.start_session(capabilities)
+  File "/home/rutuja/selenium-test/selenium-test/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 362, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rutuja/selenium-test/selenium-test/venv/lib/python3.12/site-packages/selenium/webdriver/remote/webdriver.py", line 454, in execute
+    self.error_handler.check_response(response)
+  File "/home/rutuja/selenium-test/selenium-test/venv/lib/python3.12/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#sessionnotcreatedexception
+Stacktrace:
+#0 0x5c756099d7da <unknown>
+#1 0x5c75604422e0 <unknown>
+#2 0x5c756047c7bd <unknown>
+#3 0x5c7560477ad7 <unknown>
+#4 0x5c75604c7e9e <unknown>
+#5 0x5c75604c7466 <unknown>
+#6 0x5c75604b9683 <unknown>
+#7 0x5c7560485b5b <unknown>
+#8 0x5c7560486f31 <unknown>
+#9 0x5c756096272b <unknown>
+#10 0x5c7560966534 <unknown>
+#11 0x5c7560949229 <unknown>
+#12 0x5c75609670d8 <unknown>
+#13 0x5c756092d61f <unknown>
+#14 0x5c756098add8 <unknown>
+#15 0x5c756098afb6 <unknown>
+#16 0x5c756099caf6 <unknown>
+#17 0x751c1cc9caa4 <unknown>
+#18 0x751c1cd29c3c <unknown>
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 387 ms
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
